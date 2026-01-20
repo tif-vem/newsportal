@@ -12,8 +12,8 @@ if($path == '' OR $path == 'index' OR $path == 'index.php') {
 elseif($path == 'all') {
     $response = Controller::AllNews();
 }
-elseif($path == 'category ' and isset($_GET['id']))  {
-    $response = Conrtoller::NewsByCatID($_GET['id']);
+elseif($path == 'category' and isset($_GET['id']))  {
+    $response = Controller::NewsByCatID($_GET['id']);
 }
 elseif($path == 'news' and isset($_GET['id']))  {
     $response = Controller::NewsByID($_GET['id']);
